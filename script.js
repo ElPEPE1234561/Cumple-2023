@@ -31,7 +31,7 @@ function showDownloadButton() {
 
 function checkDownloadButton() {
   var nameValue = firstNameInput.value.toLowerCase();
-  if (nameValue === "descargar") {
+  if (nameValue === "R5#7rKs9!qY2") {
     showDownloadButton();
   } else {
     downloadButton.style.display = "none";
