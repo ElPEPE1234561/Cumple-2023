@@ -30,21 +30,11 @@ function showDownloadButton() {
 }
 
 function checkDownloadButton() {
-  var nameValue = firstNameInput.value.toLowerCase();
-  if (nameValue === "R5#7rKs9!qY2") {
+  var password = "R5#7rKs9!qY2";
+  var enteredPassword = firstNameInput.value;
+  if (enteredPassword === password) {
     showDownloadButton();
   } else {
     downloadButton.style.display = "none";
   }
 }
-
-function downloadImage() {
-  var imageUrl = document.getElementById("alternate-image").src;
-  var link = document.createElement("a");
-  link.href = imageUrl;
-  link.download = "yo.jpg";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
