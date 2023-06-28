@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Página Web</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Estas invitado a mi cumpleaños c:</h1>
+
+  <div class="image-container">
+    <img id="my-image" src="portada_cumple.jpg" alt="Imagen">
+    <img id="alternate-image" src="yo.jpg" alt="Imagen alternativa" class="hidden">
+    <div id="text-overlay"></div>
+  </div>
+
+  <div class="button-container">
+    <button id="rotate-button" onclick="rotateImage()">invitacion</button>
+    <div id="text-fields" class="hidden">
+      <input type="text" id="first-name-input" placeholder="Codigo" oninput="checkDownloadButton()">
+    </div>
+    <button id="download-button" class="hidden" download="yo.jpg" onclick="downloadImage()">Descargar Invitación</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
